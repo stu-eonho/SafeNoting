@@ -1,0 +1,45 @@
+# 공개 범위: 아래 허용 목록에 적힌 파일만 저장소에 올라간다.
+# 새 파일은 기본적으로 비공개이며, 공개하려면 여기에 명시적으로 추가한다.
+
+/*
+!/.gitignore
+!/README.md
+!/requirements.txt
+!/.env.example
+
+# 문서: 결과를 뒷받침하는 기술 문서만 공개
+!/docs/
+/docs/*
+!/docs/10-model-validation.md
+!/docs/11-forecast-model-design.md
+!/docs/13-cv-dataset.md
+!/docs/images/
+
+# 코드: 운영용 셸 스크립트와 구버전 정제기는 제외
+!/scripts/
+/scripts/*.sh
+/scripts/clean_waterlevel.py
+
+# 어디에 있든 공개하지 않는 것
+.env
+.env.*
+!/.env.example
+*.key
+*.pem
+__pycache__/
+*.py[cod]
+*.pkl
+*.pt
+*.npz
+*.log
+*.pdf
+*.csv
+*.svg
+.claude/
+.agents/
+.codex/
+CLAUDE.md
+AGENTS.md
+_workspace/
+data/
+cache/

@@ -1,0 +1,10 @@
+# Python 3.11+ (개발 환경: 3.14)
+numpy>=2.0
+matplotlib>=3.8
+networkx>=3.2
+osmnx>=2.0          # 도로망 그래프 구축 (Overpass 접속이 막히면 scripts/fetch_context.py 방식 참고)
+lightgbm>=4.0       # GBDT 수위 예측 비교 모델
+torch>=2.2          # 수위 예측 Transformer · CV 특징 추출 (CPU 버전으로 충분)
+torchvision>=0.17   # ImageNet 사전학습 ResNet18
+opencv-python>=4.8  # CCTV 프레임 처리
+pillow>=10.0
